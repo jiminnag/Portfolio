@@ -56,16 +56,11 @@ a {
     height: 120px;
 }
 
-#main .logo {
-    float: left;
-    margin: 40px 0px 0px 50px;
-    width: 180px;
-    height: 80px;
-    color: #716E64;
-}
+
 
 #main .nav {
-    float: right;
+    position: fixed;
+    right: 0px;
     margin: 50px 0 0 0;
 }
 
