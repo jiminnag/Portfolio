@@ -22,33 +22,31 @@ a {
 }
 
 #wrap>div:nth-child(1) {
-    /*background-color: burlywood;*/
     background: url(../main.png) no-repeat 0 0;
 }
 
 #wrap>div:nth-child(2) {
     background: url(../profile.png) no-repeat 0 0;
+
 }
 
 #wrap>div:nth-child(3) {
     margin-top: 200px;
-    /*background-color: rgb(135, 222, 208);*/
+
 }
 
 #wrap>div:nth-child(4) {
     margin-top: 200px;
-    /* background-color: rgb(135, 183, 222);*/
+
 }
 
 #wrap>div:nth-child(5) {
     margin-top: 200px;
-    /* background-color: rgb(222, 135, 208);*/
 }
 
 #wrap>div>div {
     margin: 0 auto;
     height: 100vh;
-    /* background-color:rgba(255, 244, 146, 0.5); */
 }
 
 #main .header {
@@ -255,7 +253,7 @@ a {
     left: 0;
 }
 
-#skill .blog {
+#skill .github {
     width: 400px;
     height: 250px;
     border: 1px solid#ededed;
@@ -263,40 +261,40 @@ a {
     overflow: hidden;
 }
 
-#skill .blog1 {
+#skill .github1 {
     width: 400px;
     height: 250px;
     border-radius: 5px;
     overflow: hidden;
 }
 
-#skill .blog1 img {
+#skill .github img {
     margin: 0 auto;
     width: 400px;
     height: 200px;
     background-color: #ccc;
 }
 
-#skil .blog1 img img {
+#skil .github1 img img {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-#skill .blog1 .a {
+#skill .github1 .a {
     width: 379px;
     height: 199px;
     border: solid 1px #d9d9d9;
 }
 
-#skill .blog1 .blog_title {
+#skill .github1 .github_title {
     overflow: hidden;
     padding: 72px;
     text-align: center;
     font-size: 43px;
 }
 
-#skill .blog1 li {
+#skill .github1 li {
     text-align: center;
     line-height: 40px;
     font-size: 20px;
