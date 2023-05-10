@@ -176,10 +176,10 @@
                         <div class="project1_img"><img src="./images/img.png" alt=""> </div>
                     </a>
                     <ul>
-                        <li>프로젝트명 : 메디큐브 클론코딩 </li>
-                        <li>기간 : 1주</li>
-                        <li>설명 : 사이트를 보고 클론코딩</li>
-                        <li>사용기술 : Css, Html</li>
+                        <li>프로젝트명 : 메디큐브 클론코딩하기</li>
+                        <li>기간 : 5일</li>
+                        <li>설명 : 사이트를 보고 클론코딩하기</li>
+                        <li>사용기술 : Css, Html ,JavaScript</li>
                     </ul>
                 </div>
                 <div class="project2">
@@ -188,9 +188,9 @@
                     </a>
                     <ul>
                         <li>프로젝트명 : 기획하고 코딩하기 </li>
-                        <li>기간 : 2주 </li>
-                        <li>설명 : 기획하고 XD작업하고 코딩 </li>
-                        <li>사용기술 : Adobe XD, Css, Html</li>
+                        <li>기간 : 1주 </li>
+                        <li>설명 : 기획하고 XD작업하고 코딩하기 </li>
+                        <li>사용기술 : Adobe XD, Css, Html, JavaScript</li>
                     </ul>
                 </div>
                 <div class="project3">
@@ -211,14 +211,56 @@
             <div class="in_end">
                 <h3 class="in_title">멋진 인재를 찾고 계신가요?<br></h3>
                 <div class="inner">
-                    <div class="in_box">
-                        메일보내기
+                    <div style="margin: 0 auto; width: 400px;">
+                        <form id="form">
+                            <label>Name</label><br />
+                            <input type="text" name="name" /><br /><br />
+                            <label>from_name</label><br />
+                            <input type="text" name="from_name" /><br /><br />
+                            <label>Email</label><br />
+                            <input type="email" name="user_email" /><br /><br />
+                            <label>Message...</label><br />
+                            <textarea name="message" id="message" /></textarea><br /><br />
+                            <input type="submit" value="S E N D" id="button" />
+                        </form>
+
+                        <script type="text/javascript"
+                            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+                            </script>
+
+                        <script type="text/javascript">
+                            emailjs.init('aEjaivgYlh3hEy-sK')
+
+                            const btn = document.getElementById('button');
+
+                            document.getElementById('form')
+                                .addEventListener('submit', function (event) {
+                                    event.preventDefault();
+
+                                    btn.value = 'Sending...';
+
+                                    const serviceID = 'service_qilmml9';
+                                    const templateID = 'template_9g9jstr';
+
+                                    emailjs.sendForm(serviceID, templateID, this)
+                                        .then(() => {
+                                            btn.value = 'Send Email';
+                                            alert('메일보내기 성공');
+                                        }, (err) => {
+                                            btn.value = 'Send Email';
+                                            alert(JSON.stringify(err));
+                                        });
+                                    e.target.reset();
+                                });
+                        </script>
                     </div>
                 </div>
-                <p>Thank you</p>
+                <p>Thank you &#128522;</p>
+
             </div>
         </div>
-      
+
+
 
     </div>
     </div>

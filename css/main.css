@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #fafafa;
 }
 
 ul,
@@ -19,6 +20,7 @@ a {
 #wrap>div {
     width: 100%;
     /* height: 100vh */
+
 }
 
 #wrap>div:nth-child(1) {
@@ -253,19 +255,12 @@ a {
     left: 0;
 }
 
-#skill .github {
-    width: 400px;
-    height: 250px;
-    border: 1px solid#ededed;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
 #skill .github1 {
     width: 400px;
     height: 250px;
     border-radius: 5px;
     overflow: hidden;
+    background-color: #fff;
 }
 
 #skill .github img {
@@ -298,8 +293,9 @@ a {
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    color: #000;
-    border: 1px;
+    color: rgb(62, 62, 62);
+    font-weight: 800;
+    background-color: #fff;
 }
 
 #project {
@@ -326,9 +322,10 @@ a {
 #project .project1 {
     width: 400px;
     height: 350px;
-    border: 1px solid #ededed;
+    border: 1px solid #fff;
     border-radius: 5px;
     overflow: hidden;
+    background-color: #fff;
 }
 
 
@@ -352,42 +349,50 @@ a {
 
 #project .project1 li {
     line-height: 35px;
+    background-color: #fff;
 }
 
 #project .project2 {
     width: 400px;
     height: 350px;
-    border: 1px solid#ededed;
+    border: 1px solid #fff;
     border-radius: 5px;
     overflow: hidden;
+    background-color: #fff;
 }
+
 
 #project .project2_img {
     margin: 0 auto;
     width: 400px;
     height: 200px;
-    background-color: #ccc;
+    background-color: #fff;
 }
 
 #project .project2_img img {
     width: 400px;
     height: 200px;
     overflow: hidden;
+    background-color: #fff;
 }
 
 #project .project2 ul {
     margin-top: 5px;
     text-align: center;
+    background-color: #fff;
+
 }
 
 #project .project2 li {
     line-height: 35px;
+    background-color: #fff;
 }
 
 #project .project3 {
     width: 400px;
     height: 350px;
-    border: 1px solid#ededed;
+    border: 1px solid#fff;
+    background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -396,28 +401,32 @@ a {
     margin: 0 auto;
     width: 400px;
     height: 200px;
-    background-color: #ccc;
+    background-color: #fff;
+
 }
 
 #project .project3_img img {
     width: 400px;
     height: 200px;
     overflow: hidden;
+    background-color: #fff;
 }
 
 #project .project3 ul {
     margin-top: 5px;
     text-align: center;
+    background-color: #fff;
 }
 
 #project .project3 li {
     line-height: 35px;
+    background-color: #fff;
 }
 
 
 #end .in_end {
     width: 100%;
-    height: 936px;
+    height: 950px;
     background-color: #fafafa;
     overflow-x: hidden;
 }
@@ -431,19 +440,76 @@ a {
 }
 
 #end .in_end .inner {
-    width: 700px;
-    height: 500px;
+    width: 800px;
+    height: auto;
     margin: 0 auto;
-    background-color: #716E64;
+}
+
+#end .in_end .inner h3 {
+    text-align: center;
 }
 
 #end .in_end .inner .in_box {
-    width: 700px;
-    height: 500px;
+    width: 800px;
+    height: auto;
 }
 
+#form {
+    padding: 40px 40px 15px 40px;
+    width: 400px;
+    height: auto;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+input {
+    font-size: 14px;
+    color: #000;
+    background-color: transparent;
+    width: 50%;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0px;
+    box-sizing: initial;
+}
+
+#message {
+    height: 80px;
+    font-size: 14px;
+    color: #000;
+    width: 50%;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    padding-bottom: 0px;
+    box-sizing: initial;
+}
+
+#button {
+    display: inline-block;
+    border: 2px solid;
+    text-align: center;
+    padding: 20px 0px;
+    width: 100%;
+    color: white;
+    background-color: #457ee0;
+}
+
+
+label {
+
+    font-size: 15px;
+    line-height: 35px;
+}
+
+
+
 #end .in_end p {
-    padding: 80px;
+    margin-top: 50px;
+    padding: 0px;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
