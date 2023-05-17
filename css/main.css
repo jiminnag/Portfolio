@@ -25,6 +25,7 @@ a {
 
 #wrap>div:nth-child(1) {
     background: url(../main.png) no-repeat 0 0;
+    background-color: #fafafa;
 }
 
 #wrap>div:nth-child(2) {
@@ -202,14 +203,17 @@ a {
     margin-top: 30px;
     list-style: none;
     width: 50px;
+    background-color: #fff;
 }
 
 #q_mn ul.nav li {
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    background-color: #fff;
 }
 
 #q_mn ul.nav li a {
     color: #ccc;
+    background-color: #fff;
 }
 
 #q_mn ul.nav li.on a {
@@ -319,9 +323,17 @@ a {
     left: 0;
 }
 
+#project .in_project .home {
+    line-height: 30px;
+    font-size: 24px;
+    color: rgb(62, 62, 62);
+    font-weight: 700;
+    background-color: #fff;
+}
+
 #project .project1 {
     width: 400px;
-    height: 350px;
+    height: 370px;
     border: 1px solid #fff;
     border-radius: 5px;
     overflow: hidden;
@@ -345,16 +357,18 @@ a {
 #project .project1 ul {
     margin-top: 5px;
     text-align: center;
+    background-color: #fff;
 }
 
 #project .project1 li {
-    line-height: 35px;
+    line-height: 32px;
     background-color: #fff;
+    font-size: 15px;
 }
 
 #project .project2 {
     width: 400px;
-    height: 350px;
+    height: 370px;
     border: 1px solid #fff;
     border-radius: 5px;
     overflow: hidden;
@@ -384,13 +398,13 @@ a {
 }
 
 #project .project2 li {
-    line-height: 35px;
+    line-height: 32px;
     background-color: #fff;
 }
 
 #project .project3 {
     width: 400px;
-    height: 350px;
+    height: 370px;
     border: 1px solid#fff;
     background-color: #fff;
     border-radius: 5px;
@@ -419,7 +433,7 @@ a {
 }
 
 #project .project3 li {
-    line-height: 35px;
+    line-height: 32px;
     background-color: #fff;
 }
 
