@@ -134,9 +134,7 @@ a {
 }
 
 #profile .profile_text {
-    width: 930px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    text-align: center;
 }
 
 #profile .in_profile p {
@@ -155,7 +153,7 @@ a {
 }
 
 
-#profile .in_profile .profile_photo {
+/* #profile .in_profile .profile_photo {
     position: relative;
     width: 300px;
     height: 300px;
@@ -175,7 +173,10 @@ a {
 #profile .in_profile .profile_photo .photo img {
     width: 100%;
     height: 100%;
-}
+} */
+
+
+
 
 .in_profile h3 {
 
@@ -224,7 +225,7 @@ a {
     font-size: 70px;
     text-align: center;
     color: rgb(62, 62, 62);
-    padding-top: 100px;
+    padding-top: 110px;
 }
 
 #skill .in_skill {
@@ -333,7 +334,7 @@ a {
 
 #project .project1 {
     width: 400px;
-    height: 370px;
+    height: auto;
     border: 1px solid #fff;
     border-radius: 5px;
     overflow: hidden;
@@ -366,9 +367,21 @@ a {
     font-size: 15px;
 }
 
+.btn1 {
+    position: relative;
+    top: 140px;
+    left: 310px;
+    width: 280px;
+    color: #000;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
 #project .project2 {
     width: 400px;
-    height: 370px;
+    height: auto;
     border: 1px solid #fff;
     border-radius: 5px;
     overflow: hidden;
@@ -402,9 +415,21 @@ a {
     background-color: #fff;
 }
 
+.btn2 {
+    position: relative;
+    top: 140px;
+    left: 520px;
+    width: 280px;
+    color: #000;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
 #project .project3 {
     width: 400px;
-    height: 370px;
+    height: auto;
     border: 1px solid#fff;
     background-color: #fff;
     border-radius: 5px;
@@ -435,6 +460,18 @@ a {
 #project .project3 li {
     line-height: 32px;
     background-color: #fff;
+}
+
+.btn3 {
+    position: relative;
+    top: 140px;
+    width: 280px;
+    left: 750px;
+    color: #000;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
 }
 
 
