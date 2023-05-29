@@ -47,10 +47,9 @@ a {
     margin-top: 200px;
 }
 
-#wrap>div>div {
+ #wrap>div>div {
     margin: 0 auto;
-    height: 100vh;
-}
+} 
 
 #main .header {
     width: 100%;
@@ -303,9 +302,18 @@ a {
     background-color: #fff;
 }
 
+.slide {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.slide.show {
+    transform: translateX(0%);
+}
+
 #project {
     width: 100%;
-    height: 720px;
+    height: auto;
 }
 
 #project h3 {
@@ -318,9 +326,10 @@ a {
     width: 1500px;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     position: relative;
-    top: 120px;
+    justify-content: space-between;
+    top: 60px;
     left: 0;
 }
 
@@ -369,8 +378,6 @@ a {
 
 .btn1 {
     position: relative;
-    top: 140px;
-    left: 310px;
     width: 280px;
     color: #000;
     border-radius: 5px;
@@ -417,8 +424,6 @@ a {
 
 .btn2 {
     position: relative;
-    top: 140px;
-    left: 520px;
     width: 280px;
     color: #000;
     border-radius: 5px;
@@ -462,18 +467,130 @@ a {
     background-color: #fff;
 }
 
-.btn3 {
+#project .project4 {
+    margin-top: 20px;
+    width: 400px;
+    height: auto;
+    border: 1px solid#fff;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#project .project4_img {
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+
+}
+
+#project .project4_img img {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#project .project4 ul {
+    margin-top: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#project .project4 li {
+    line-height: 32px;
+    background-color: #fff;
+}
+.btn4 {
     position: relative;
-    top: 140px;
     width: 280px;
-    left: 750px;
     color: #000;
     border-radius: 5px;
     background-color: #fff;
     border: 1px solid #000;
     cursor: pointer;
 }
+#project .project5 {
+    margin-top: 20px;
+    width: 400px;
+    height: auto;
+    border: 1px solid#fff;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
 
+#project .project5_img {
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+
+}
+
+#project .project5_img img {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#project .project5 ul {
+    margin-top: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#project .project5 li {
+    line-height: 32px;
+    background-color: #fff;
+}
+#project .project6 {
+    margin-top: 20px;
+    width: 400px;
+    height: auto;
+    border: 1px solid#fff;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#project .project6_img {
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+
+}
+
+#project .project6_img img {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#project .project6 ul {
+    margin-top: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#project .project6 li {
+    line-height: 32px;
+    background-color: #fff;
+}
+
+.btn3 {
+    position: relative;
+    width: 280px;
+    color: #000;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
 
 #end .in_end {
     width: 100%;
