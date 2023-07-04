@@ -88,7 +88,6 @@
                     <span>
                         저는 23년 1월 'UI/UX 프론트엔드' 국비지원 교육을 시작하면서 개발하는것에 흥미를 느꼈습니다<br>
                         제가 만든 페이지가 동작하는 것에 성취감과 뿌듯함을 느낍니다.<br>
-                        <br>
                         저는 지금 하는 있는 것이 좋습니다 좋아하니깐 즐기게 되고 더욱 열심히할려고 합니다.<br>
                         아직은 부족하지만 부족한 만큼 더 열심히 할려고합니다.<br>
                         좋은 모습 보여드리겠습니다.<br>
@@ -122,10 +121,6 @@
                     <li>
                         <img src="./images/pngwing.com.png"style="width: 80px; height: 80px;">
                       <p class="skill_area">요소의 조작, 이벤트 처리, 애니메이션 효과등을 구현할 수 있습니다.</p>
-                    </li>
-                    <li>
-                        <img src="./images/jquery.png" style="width: 80px; height: 80px;">
-                        <p class="skill_area">관련 라이브러리와 애니메이션등 잘 활용할 수 있습니다.</p>
                     </li>
                     <li>
                         <img src="./images/React.png" style="width: 80px; height: 80px;">
@@ -275,25 +270,23 @@
                             <textarea name="message" id="message"></textarea><br /><br />
                             <input type="submit" value="S E N D" id="button" />
                         </form>
-
-                        <script type="text/javascript"
-                            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-                            </script>
-
+        
+                        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        
                         <script type="text/javascript">
-                            emailjs.init('aEjaivgYlh3hEy-sK')
-
+                            emailjs.init('YOUR_EMAILJS_API_KEY')
+        
                             const btn = document.getElementById('button');
-
+        
                             document.getElementById('form')
                                 .addEventListener('submit', function (event) {
                                     event.preventDefault();
-
+        
                                     btn.value = 'Sending...';
-
-                                    const serviceID = 'service_qilmml9';
-                                    const templateID = 'template_9g9jstr';
-
+        
+                                    const serviceID = 'YOUR_EMAILJS_SERVICE_ID';
+                                    const templateID = 'YOUR_EMAILJS_TEMPLATE_ID';
+        
                                     emailjs.sendForm(serviceID, templateID, this)
                                         .then(() => {
                                             btn.value = 'Send Email';
@@ -302,13 +295,12 @@
                                             btn.value = 'Send Email';
                                             alert(JSON.stringify(err));
                                         });
-                                    e.target.reset();
+                                    event.target.reset();
                                 });
                         </script>
                     </div>
                 </div>
                 <p>Thank you &#128522;</p>
-
             </div>
         </div>
 
